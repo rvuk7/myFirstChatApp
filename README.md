@@ -4,8 +4,10 @@ This is my first solo ReactJS project that was made for a final paper as part of
 
 To check out the functionalities of this project please do the following:
 
+```
 Clone this repository
 Run npm install
 Run npm start (as many times you'd like to simulate a conversation between different users).
+```
 
 Enjoy!
