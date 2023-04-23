@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.appHeader {
+  font-family: monospace;
+  font-size: larger;
+  background-color: #262626;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: solid 2px salmon;
+}
+
+.chatApp {
+  background-image: url("https://img.freepik.com/free-photo/pink-wall-texture_23-2147852064.jpg?w=996&t=st=1682112911~exp=1682113511~hmac=3de0603e0c18ec3011e91753eb0224c1dc8afffe63eb3747fa3be0374d9bf607");
+  background-size: cover;
+  border: 10px solid #000000;
+  border-radius: 4px;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.messagesList {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #262626;
+  background-image: url("./assets/Dark\ Gray\ and\ Gray\ Minimalist\ Linktree\ Background.png");
+  background-size: cover;
+  padding: 20px 0px;
+  margin: 0px auto 20px;
+  width: 100%;
+  max-width: 900px;
+  flex-grow: 1;
+  overflow: hidden;
+  border: solid 2px salmon;
+}
+
+.memberUsername {
+  color: rgb(184, 177, 177);
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.messageText {
+  padding: 10px;
+  max-width: 300px;
+  height: auto;
+  max-height: auto;
+  border-radius: 12px;
+  background-color: #79bfa1;
+  color: white;
+  display: inline-block;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.Messaging {
+  display: flex;
+  margin-top: 10px;
+}
+
+.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.currentMember .messageContent .messageText {
+  background-color: salmon;
+  align-items: flex-end;
+}
+
+ul.messagesList {
+  overflow-y: scroll;
+}
+
+ul.messagesList::-webkit-scrollbar {
+  display: none;
+}
+
+.memberIcon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 10px 5px;
+}
+
+.messageInput {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  border-radius: 8px;
+  margin-left: 285px;
+  border: 1px solid salmon;
+  height: 30px;
+}
+
+.messageInput::placeholder {
+  padding: 5px;
+}
+
+.messageInput[type="text"] {
+  padding: 10px;
+}
+
+.sendButton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  background-color: salmon;
+  color: white;
+  border: 2px solid #262626;
+  border-radius: 8px;
+  margin-left: 10px;
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: rgb(218, 67, 51);
+}
+
+.error {
+  color: salmon;
+  background-color: #484747;
+  margin-left: 285px;
+  width: 550px;
+}
+
+.messagesTime {
+  font-size: 10px;
+  text-align: end;
+}
