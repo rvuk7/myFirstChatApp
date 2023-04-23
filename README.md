@@ -8,4 +8,4 @@ Clone this repository
 Run npm install
 Run npm start (as many times you'd like to simulate a conversation between different users).
 
-Enjoy!
+Enjoy! :)
