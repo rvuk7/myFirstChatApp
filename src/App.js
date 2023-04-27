@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 import Messages from "./components/Messages";
-import Names from "./components/Names";
-import LastNames from "./components/LastNames";
+import names from "./data/names.json";
+import lastNames from "./data/lastNames.json";
 import Input from "./components/Input";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const drone = new window.Scaledrone("sUjg3Hn5Wfsef0iv");
 
@@ -27,8 +27,8 @@ function App() {
       if (error) {
         return console.error(error);
       }
-      const name = Names[Math.floor(Math.random() * Names.length)];
-      const lastName = LastNames[Math.floor(Math.random() * LastNames.length)];
+      const name = names[Math.floor(Math.random() * names.length)];
+      const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
       const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
       const randomMember = {
         username: `${name} ${lastName}`,

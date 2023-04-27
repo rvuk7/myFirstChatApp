@@ -1,4 +1,4 @@
-const names = [
+[
   "Berislav",
   "Bojan",
   "Bogdan",
@@ -250,7 +250,5 @@ const names = [
   "Zrinka",
   "Zvjezdana",
   "Zvonimira",
-  "Željana",
-];
-
-export default names;
+  "Željana"
+]
